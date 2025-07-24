@@ -105,10 +105,10 @@ const Index = () => {
               </div>
 
               {/* Calculator */}
-              <div className="space-y-8">
+              <div className="space-y-6 md:space-y-8">
                 {/* Amount Slider */}
                 <div>
-                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 md:mb-4 gap-2">
                     <span className="text-2xl md:text-3xl font-bold text-gray-800">
                       {formatMoney(loanAmount[0])} ₽
                     </span>
@@ -128,7 +128,7 @@ const Index = () => {
 
                 {/* Days Slider */}
                 <div>
-                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 md:mb-4 gap-2">
                     <span className="text-2xl md:text-3xl font-bold text-gray-800">
                       {loanDays[0]} дней
                     </span>
@@ -152,7 +152,7 @@ const Index = () => {
                 </Button>
 
                 {/* Repayment Info */}
-                <div className="bg-gray-50 rounded-2xl p-6 space-y-3">
+                <div className="bg-gray-50 rounded-2xl p-4 md:p-6 space-y-2 md:space-y-3">
                   <div className="flex justify-between text-lg">
                     <span className="text-gray-600">Вы возвращаете:</span>
                     <span className="font-bold text-gray-800">
