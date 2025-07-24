@@ -94,18 +94,12 @@ const Index = () => {
         <div className="max-w-2xl mx-auto">
           <Card className="bg-white/95 backdrop-blur-sm shadow-2xl rounded-3xl overflow-hidden">
             <CardContent className="p-8">
-              {/* Action Buttons */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              {/* Action Button */}
+              <div className="mb-8">
                 <Card className="bg-blue-50 border-blue-200 hover:bg-blue-100 transition-colors cursor-pointer">
                   <CardContent className="p-6 text-center">
                     <h3 className="font-semibold text-lg text-gray-800 mb-2">Взять быстрый заем</h3>
                     <Icon name="CreditCard" className="text-blue-600 mx-auto" size={32} />
-                  </CardContent>
-                </Card>
-                <Card className="bg-gray-50 border-gray-200 hover:bg-gray-100 transition-colors cursor-pointer">
-                  <CardContent className="p-6 text-center">
-                    <h3 className="font-semibold text-lg text-gray-800 mb-2">Вопросы и ответы</h3>
-                    <Icon name="HelpCircle" className="text-gray-600 mx-auto" size={32} />
                   </CardContent>
                 </Card>
               </div>
