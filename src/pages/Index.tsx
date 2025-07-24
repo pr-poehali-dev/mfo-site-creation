@@ -91,9 +91,9 @@ const Index = () => {
         </div>
 
         {/* Main Calculator Card */}
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto px-4">
           <Card className="bg-white/95 backdrop-blur-sm shadow-2xl rounded-3xl overflow-hidden">
-            <CardContent className="p-8">
+            <CardContent className="p-4 md:p-8">
               {/* Action Button */}
               <div className="mb-8">
                 <Card className="bg-blue-50 border-blue-200 hover:bg-blue-100 transition-colors cursor-pointer">
@@ -108,11 +108,11 @@ const Index = () => {
               <div className="space-y-8">
                 {/* Amount Slider */}
                 <div>
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-3xl font-bold text-gray-800">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                    <span className="text-2xl md:text-3xl font-bold text-gray-800">
                       {formatMoney(loanAmount[0])} ₽
                     </span>
-                    <span className="text-gray-500">
+                    <span className="text-sm md:text-base text-gray-500">
                       Максимум - {formatMoney(maxAmount)} ₽
                     </span>
                   </div>
@@ -128,11 +128,11 @@ const Index = () => {
 
                 {/* Days Slider */}
                 <div>
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-3xl font-bold text-gray-800">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                    <span className="text-2xl md:text-3xl font-bold text-gray-800">
                       {loanDays[0]} дней
                     </span>
-                    <span className="text-gray-500">
+                    <span className="text-sm md:text-base text-gray-500">
                       Максимум - {maxDays} дней
                     </span>
                   </div>
@@ -147,7 +147,7 @@ const Index = () => {
                 </div>
 
                 {/* Get Money Button */}
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white text-xl py-6 rounded-2xl font-semibold shadow-lg">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg md:text-xl py-4 md:py-6 rounded-2xl font-semibold shadow-lg">
                   Получить {formatMoney(loanAmount[0])} ₽
                 </Button>
 
